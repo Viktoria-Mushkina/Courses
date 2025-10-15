@@ -24,7 +24,7 @@ function task1(){
  ];
  console.log(calculateGrade(students));
 }
-task1();
+// task1();
 
 // Задание 2
 function task2(){
@@ -48,4 +48,4 @@ function task2(){
  const filters = { maxPrice: 20000, category: "электроника"};
  console.log(new_products(products,filters));
 }
-task2()
+// task2()
