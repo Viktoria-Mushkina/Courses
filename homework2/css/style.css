@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+ background: linear-gradient(0deg, #696969,#a3a3a3,#dedede);
+ height: 100vh;
+}                                             
 .container{
  margin: 0 auto;
  width: 442px;
@@ -81,4 +85,17 @@ li:nth-child(even){
 .material-icons{
  cursor: pointer;
  color: rgb(145, 36, 36);
+}
+.btn-done{
+  width: 19px;
+  height: 17px;
+  background-image: url(../img/check.svg);
+  margin: 4px 30px 0 0;
+}
+.btn-done.done{
+  background-image: url(../img/chech-done.svg);
+}
+.btn-done.done + .task-text{
+  text-decoration: line-through;
+  color:white;
 }

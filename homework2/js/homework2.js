@@ -20,6 +20,23 @@ btnAdd.addEventListener('click',() => {
    li.remove();
   });
   
+  let btnDone = document.createElement('button')
+  btnDone.className = 'btn-done'
+
+  btnDone.addEventListener('click', () =>{
+   if (btnDone.classList.contains('done')) {
+    btnDone.classList.remove('done');
+    const isEven = Array.from(ul.children).indexOf(li) % 2 == 1;
+    li.style.backgroundColor = isEven ? "rgba(170, 170, 170, 1)" : "rgba(255, 255, 255, 1)";
+   }
+   else {
+    btnDone.classList.add ('done');
+    
+    li.style.backgroundColor = "black";
+   };
+  })
+
+  li.appendChild(btnDone);
   li.appendChild(taskText);
   li.appendChild(deleteIcon);
 
